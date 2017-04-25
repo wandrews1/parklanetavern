@@ -234,7 +234,7 @@ select {
 }
 .nav > li > a {
   color: #fff;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   font-weight: 400;
 }
