@@ -1,0 +1,93 @@
+/* ======= Reviews Section ======= */
+.reviews-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: @smoky-white;
+    .review-title {
+        color: @color;
+        font-size: 28px;
+        font-weight: 300;
+        position: relative;
+        display: inline-block;
+        
+        .fa {
+            position: absolute;
+            left: -35px;
+            top: -10px;
+            font-weight: normal;
+            font-size: 20px;
+        }
+    }
+    
+    .review {
+        border-left: 0;
+        max-width: 800px;
+        font-weight: 300;
+        font-size: 18px;
+        p {
+            font-style: italic;
+        }
+    }
+    
+    .source {
+        .profile {
+            margin-bottom: 5px;
+            display: inline-block;
+            .border-radius(50%);
+        }
+        .name {
+            font-size: 14px;
+            color: @text-color-secondary;
+        }
+    }
+    
+    .rating {
+        .fa {
+            color: @color-2;
+        }
+    }
+    .carousel-inner {
+        margin-bottom: 50px;
+    }
+    .carousel-indicators {
+        position: relative;
+        display: inline-block;
+        left: inherit;
+        width: auto;
+        margin-left: inherit;
+        padding-left: inherit;
+        bottom: inherit;
+        margin-bottom: 0;
+        li {            
+            display: inline-block;
+            text-indent: 0;
+            margin: inherit;
+            margin-bottom: 15px;
+            width: auto;
+            height: auto;
+            background-color: none;
+            border: none;
+            .border-radius(none);
+            padding: 0 30px;
+            
+            img {
+                 .opacity(0.2);
+                 vertical-align:middle;
+                 
+            }
+            &:hover {
+                img {
+                    .opacity(0.5);
+                }
+            }
+            &.active {
+                background: none;
+                width: auto;
+                height: auto;
+                img {
+                    .opacity(1);
+                }
+            }
+        }
+    }
+}

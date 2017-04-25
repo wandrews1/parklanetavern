@@ -1,0 +1,129 @@
+/* ======= Base ======= */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', arial, sans-serif;
+    color: @text-color-primary;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: @color;
+    .transition (all 0.4s ease-in-out);
+    &:hover, &:active {
+        text-decoration: underline;
+        color: darken(@color, 5%);        
+    }
+    &:focus {
+        text-decoration: none;
+        color: darken(@color, 5%); 
+        outline: none;
+    }
+}
+
+.btn, a.btn {
+    .transition (all 0.4s ease-in-out);
+    font-weight: bold;
+    .fa {
+        color: #fff;
+        margin-right: 5px;
+    }
+    &:focus {
+        color: #fff;
+    }
+}
+
+a.btn-primary, .btn-primary { 
+    background: @color;
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    &:hover, &:active, &:focus {
+        background: darken(@color, 5%);
+        border: none;
+        color: #fff;
+        outline: none;
+    }
+}
+
+a.btn-secondary, .btn-secondary { 
+    background: none;
+    border: 2px solid @color;
+    color: @color;
+    &:hover, &:active, &:focus {
+        background: @color;
+        border: 2px solid @color;
+        color: #fff;
+        outline: none;
+    }
+}
+
+.highlight {
+    color: @color;
+}
+
+.form-control {
+   .box-shadow(none);
+    height: 45px;
+    border-color: @divider;
+    .placeholder(@grey);
+    &:focus {
+        border-color: darken(@divider, 5%);
+        .box-shadow(none);
+    }    
+}
+
+.text-highlight {
+    color: darken(@color, 30%);
+}
+
+.script {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+input[type="button"], 
+textarea, 
+select {
+    appearance: none;  /* for mobile safari */
+    -webkit-appearance: none;
+}
+
+#topcontrol {
+    background: @color;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: none;
+    .border-radius(4px);
+    .transition (all 0.4s ease-in-out);
+    z-index: 30;
+    &:hover {
+        background: lighten(@color, 5%);
+    }
+    .fa {
+        position: relative;
+        top: 3px;
+        font-size: 25px;
+    }
+}

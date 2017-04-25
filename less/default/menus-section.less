@@ -1,0 +1,110 @@
+/* ======= Menus Section ======= */
+.menus-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .section-title {
+        font-size: 28px;
+        font-weight:bold;
+        margin-top: 0;
+        margin-bottom: 45px;
+        span {
+            display: block;
+        }
+        .script {
+            color: @color;
+            display: block;
+            font-size: 26px;
+        }
+
+        .title-border {
+            background: url('../images/title-border.png') no-repeat center top;
+            height: 20px;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    
+    .intro {
+        max-width: 800px;
+        color: @text-color-secondary;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    
+    .menu-links {
+        margin-bottom: 60px;
+        li {
+            margin-bottom: 15px;
+        }
+    }
+    .featured {
+        .title {
+           font-size: 26px;
+           font-weight: normal;
+           color: @text-color-primary;  
+           margin-top: 0;
+           margin-bottom: 30px;
+        }
+    }
+    .media-wrapper {
+        .media-item {
+            margin-bottom: 30px;
+            img {
+               width: 100%;
+               .transition (all 0.4s ease-in-out);
+            }
+            &:hover {
+                .mask {
+                    visibility:visible;
+                    .opacity(1);
+                }
+                img {
+                    .scale(1.1);
+                }
+            }
+        }
+        .media-item-inner {
+            position: relative;
+            overflow:hidden;
+        }
+        .mask {
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            text-align: left;
+            text-decoration: none;
+            padding: 15px;
+            .transition (all 0.4s ease-in-out);
+            .opacity(0);
+            
+            .item-title {
+                font-size: 20px;
+                color: @color;
+                margin-bottom: 5px;
+            }
+            
+            .price {
+                font-size: 26px;
+                font-weight: 300;
+                position: absolute;
+                right: 30px;
+                bottom: 30px;
+            }
+            
+            span {
+                display: block;
+            }
+        }
+        .mask-inner {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            height: 100%;
+            overflow:hidden;
+        }
+    }
+}

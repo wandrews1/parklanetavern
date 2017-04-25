@@ -1,0 +1,85 @@
+/* ======= Footer ======= */
+.footer {
+    background: lighten(@black, 6%);
+    color: rgba(256, 256, 256, 0.5);
+}
+
+.footer-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-col {
+    margin-bottom: 30px;
+    .title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 0;
+        color: rgba(256, 256, 256, 0.8);
+    }
+}
+
+.subscribe-form {
+    .form-control {
+        height: 40px;
+    }
+    .email-field {
+        width: 260px;
+        margin-bottom: 15px;
+    }
+    .btn {
+        margin-bottom: 15px;
+    }
+    .error {
+       display: block;
+       clear: both;
+       margin-bottom: 10px;
+       font-weight: normal;
+       font-size: 14px;
+       color: @error; 
+    }
+}
+
+.social-icons {
+
+    a {
+        font-size: 18px;
+        display: inline-block;
+        margin-bottom: 5px;
+        width: 30px;
+        height: 30px;
+        .border-radius(50%);
+        background: rgba(256, 256, 256, 0.05);
+        text-align: center;
+        padding-top: 3px;
+      
+        &:hover {
+            color: lighten(@color, 5%);
+            background: rgba(256, 256, 256, 0.1);
+            
+        }
+    }
+}
+
+.bottom-bar {
+    color: rgba(256, 256, 256, 0.2);
+    background: lighten(@black, 3%);
+    
+    .container {
+        border-top: 1px solid lighten(@black, 2%);
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .links {
+        font-size: 12px;
+    }
+    a {
+        color: rgba(256, 256, 256, 0.2);
+        
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+

@@ -1,0 +1,122 @@
+/* ======= Menus Section ======= */
+.news-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: @smoky-white;
+    .section-title {
+        font-size: 28px;
+        font-weight:bold;
+        margin-top: 0;
+        margin-bottom: 60px;
+        span {
+            display: block;
+        }
+        .script {
+            color: @color;
+            display: block;
+            font-size: 26px;
+        }
+
+        .title-border {
+            background: url('../images/title-border.png') no-repeat center top;
+            height: 20px;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    .news-wrapper {
+        .item {
+            margin-bottom: 30px;
+            background: #fff;
+            padding: 30px;
+            padding-left: 85px;
+            .border-radius(4px);
+            position: relative;
+            .title {
+                font-weight: bold;
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+            .meta {
+                color: @text-color-secondary;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            
+        }
+        .excerpt {
+            margin-bottom: 5px;
+        }
+        .date-badge {
+            position: absolute;
+            left: -10px;
+            top: 30px;
+            width: 60px;
+            background: @color;
+            color: #fff;
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+            span {
+                display: block;
+                line-height: 1.2;
+            }
+            .month {
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+            .date {
+                font-size: 20px;
+            }
+            &:before {
+                content: "";
+                display: block;
+                width: 0; 
+            	height: 0; 
+            	border-left: 20px solid transparent;
+            	border-right: 20px solid transparent;
+            	border-top: 20px solid darken(@color, 20%);
+            	position: absolute;
+            	left: 0;
+            	bottom: -20px;
+            }
+            &:after {
+                content: "";
+                display: block;
+                background: #fff;
+                position: absolute;
+            	left: 10px;
+            	bottom: -20px;
+            	width: 50px;
+            	height: 20px;
+            }
+        }
+    }
+    .instagram-wrapper {
+        .title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        .instafeed {
+            display: inline-block;
+            overflow: hidden;
+        }
+        .item {
+            width: 80px;
+            display: inline-block;
+            padding: 5px;
+            .transition (all 0.4s ease-in-out);
+            overflow:hidden;
+            &:hover {
+                .opacity(0.9);
+                .scale(1.1); 
+            }
+        }
+    }
+    
+}
