@@ -1,7 +1,10 @@
 # Park Lane Tavern
 
 ![alt text](static/images/PLTlogo.png "Park Lane Tavern Logo")
-![alt text](https://raw.githubusercontent.com/wandrews1/parklanetavern/static/images/PLTlogo.png)
+![second](https://raw.githubusercontent.com/wandrews1/parklanetavern/static/images/PLTlogo.png)
+
+
+
 One Paragraph of project description goes here
 
 ## Getting Started
