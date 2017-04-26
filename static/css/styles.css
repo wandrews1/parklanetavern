@@ -2,6 +2,11 @@
 .menu {
   width: 100%;
 }
+.specialslink {
+  text-decoration: none;
+  -moz-color: red; /* Code for Firefox */
+  color: red;
+}
 
 
 /* ======= Base ======= */
