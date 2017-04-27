@@ -9,8 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">    
-    <link rel="icon" href="/fleur.ico">
-    <!--<link rel="shortcut icon" href="favicon.ico">  -->
     <link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
@@ -38,6 +36,8 @@
     
     <!-- Icon -->
     <link rel="icon" href="static/images/favicon.png">
+    <link rel="icon" href="fleur.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico">  
     
     <!-- StyleSheet Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="/static/css/styles.css">
@@ -55,7 +55,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
-	<!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 
     
@@ -244,7 +244,8 @@
                 <ul class="list-inline block-center">
                     <li><a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#food-modal">Food Menu</a></li>
                     <li><a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#cocktail-modal">Cocktail Menu</a></li>
-                    <li><a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#whiskey-modal">Whiskey List</a></li>
+                    <li><a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#scotch-modal">Scotch List</a></li>
+                    <li><a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#bourbon-modal">Bourbon List</a></li>
                     <li><a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#beer-modal">Tap List</a></li>
                 </ul>
             </div><!--//menu-links-->
@@ -879,7 +880,7 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th style="text-align:center" class="script">ENGLAND</th>
+                                <th style="text-align:center" class="script">England</th>
                             </tr>
                         </thead>
                     
@@ -916,7 +917,7 @@
                         
                         <!--SCOTLAND-->
                         <tr>
-                            <th style="text-align:center" class="script">SCOTLAND</th>
+                            <th style="text-align:center" class="script">Scotland</th>
                         </tr>
                         <tr>
                             <td>
@@ -942,7 +943,7 @@
                         
                         <!--DENMARK-->
                         <tr>
-                            <th style="text-align:center" class="script">DENMARK</th>
+                            <th style="text-align:center" class="script">Denmark</th>
                         </tr>
                         <tr>
                             <td>
@@ -954,7 +955,7 @@
                         
                         <!--IRELAND-->
                         <tr>
-                            <th style="text-align:center" class="script">IRELAND</th>
+                            <th style="text-align:center" class="script">Ireland</th>
                         </tr>
                         <tr>
                             <td>
@@ -980,7 +981,7 @@
                         
                         <!--BELGIUM-->
                         <tr>
-                            <th style="text-align:center" class="script">BELGIUM</th>
+                            <th style="text-align:center" class="script">Belgium</th>
                         </tr>
                         <tr>
                             <td>
@@ -1006,7 +1007,7 @@
                         
                         <!--GERMANY-->
                         <tr>
-                            <th style="text-align:center" class="script">GERMANY</th>
+                            <th style="text-align:center" class="script">Germany</th>
                         </tr>
                         <tr>
                             <td>
@@ -1018,7 +1019,7 @@
                         
                         <!--FRANCE-->
                         <tr>
-                            <th style="text-align:center" class="script">FRANCE</th>
+                            <th style="text-align:center" class="script">France</th>
                         </tr>
                         <tr>
                             <td>
@@ -1030,7 +1031,7 @@
                         
                         <!--UNITED STATES OF AMERICA-->
                         <tr>
-                            <th style="text-align:center" class="script">UNITED STATES OF AMERICA</th>
+                            <th style="text-align:center" class="script">United States of America</th>
                         </tr>
                         <tr>
                             <td>
@@ -1085,77 +1086,224 @@
     </div><!--//modal-->
     
     
-<!-- Whiskey Modal -->
-    <div id="whiskey-modal" class="modal modal-reserve fade" tabindex="-1" role="dialog" aria-labelledby="whiskeyModalLabel" aria-hidden="true">
+<!-- Scotch Modal -->
+    <div id="scotch-modal" class="modal modal-reserve fade" tabindex="-1" role="dialog" aria-labelledby="scotchModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h2 id="whiskeyModalLabel" class="modal-title text-center">
+                    <h2 id="scotchModalLabel" class="modal-title text-center">
                         <span class="script">Park Lane Tavern</span>
-                        <span class="title-text">Whiskey List</span>
+                        <span class="title-text">Scotch List</span>
                         <span class="title-border"></span>
                     </h2>
                 </div><!--//modal-header-->
                 
                 <div class="modal-body" align="center">
                     <table class="table">
-                        <thead>
-                            <tr>
-                                <th style="text-align:center" class="script">Single Malt Scotch</th>
-                            </tr>
-                        </thead>
-                    
                         <tbody>
+    
                         <!--ISLAY MALTS-->
                         <tr>
                             <td>
-                                <H4><b>ISLAY MALTS</b></H4>
+                                <SPAN style="text-align:center" class="script">Islay Malts</SPAN>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>BODDINGTON'S PUB ALE</b></H5>
-                                <p>From Manchester, England, this golden coloured ale is smooth and creamy with aromas of sweet malts and vanilla with flavours of toffee and brown sugar.</p>
-                                <p><i>Boddingtons Brewery / Pale Ale / 4.7% ABV / 16oz</i></p>
+                                <H5><b>LAPHROAIG 10</b></H5>
+                                <p>Interesting aromas of wet straw and ash complemented by a light salt and pineapple brine flavour followed by an intense crisp finish.</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>FULLER'S LONDON PRIDE ALE</b></H5>
-                                <p>From London’s only brewery, this amber coloured ale has aromas of bread and citrus with flavours of caramel and butterscotch.</p>
-                                <p><i>Griffin Brewery / Pale Ale / 4.7% ABV / 20oz</i></p>
+                                <H5><b>LAGAVULIN 16</b></H5>
+                                <p>A massive mouthful of malt and sherry with good fruity sweetness, big, powerful peat and oak. Long, spicy finish, figs, dates, peat smoke, & vanilla.</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>FULLER'S LONDON PORTER</b></H5>
-                                <p>Voted the “Best Tasting Porter in the World”, this dark brown coloured beer has aromas of coffee and chocolate with flavours of coffee and roasted chestnuts.</p>
-                                <p><i>Griffin Brewery / Porter / 5.4% ABV / 20oz</i></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <H5><b>OLD SPECKLED HEN</b></H5>
-                                <p>Old Speckled Hen has a full, smooth flavour and is very easy to drink. Its rich amber colour and superb fruity aromas are complemented by a delicious blend of malty tastes. Toffee and malt combine with bitterness on the back of the tongue to give a balanced sweetness. This, all followed by a refreshingly dry finish.</p>
-                                <p><i>Morland Brewery / English Ale / 4.5% ABV / 20oz</i></p>
+                                <H5><b>ARDBEG 10</b></H5>
+                                <p>Revered around the world as the peatiest, smokiest, most complex single malt of them all. Yet it does not flaunt the peat; rather it gives way to the natural sweetness of the malt to produce a whisky of perfect balance.</p>
                             </td>
                         </tr>
                         
-                        <!--SCOTLAND-->
                         <tr>
-                            <th style="text-align:center" class="script">SCOTLAND</th>
+                            <td>
+                                <SPAN style="text-align:center" class="script">Isle of Skye Malts</SPAN>
+                            </td>
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>BELHAVEN SCOTTISH ALE</b></H5>
-                                <p>This classic ale of Scotland is the perfect session beer. With caramel and oak aromas, a smooth mixture of ruby malts and bitter hops, and a nutty flavor that leaves a long creamy finish.</p>
-                                <p><i>Belhaven Brewery / Scottish Ale / 5.0% ABV / 20oz</i></p>
+                                <H5><b>TALISKER 10</b></H5>
+                                <p>Intense aromas of highly smoked peat and iodine, married with an abundance of citrus fruit flavours developing into a lasting flavourful finish.</p>
                             </td>
                         </tr>
-
-
+                        
+                        <tr>
+                            <td>
+                                <SPAN style="text-align:center" class="script">Lowland Malts</SPAN>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENKINCHIE 12</b></H5>
+                                <p>Subtle aromas of earth and smoke with flavours of lemongrass and citrus followed by a light and zesty finish.</p>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <SPAN style="text-align:center" class="script">Highland / Speyside Malts</SPAN>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>BALVENIE DOUBLEWOOD 12</b></H5>
+                                <p>A graceful bouquet of cedar and clove, with delicious hints of cocoa and black walnut ending with a slightly smoky finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>BALVENIE CARIBBEAN CASK 14</b></H5>
+                                <p>A graceful bouquet of cedar and clove, with delicious hints of cocoa and black walnut ending with a slightly smoky finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>CRAGGANMORE 12</b></H5>
+                                <p>Subtle herbal aromas of dill, rosemary, and basil with pear and apple flavours on the palate, and a warm, clean finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>DALMORE 12</b></H5>
+                                <p>A subtle bouquet of cranberry and strawberry balanced by flavours of honeycomb and sweet tobacco along with a nice weighty finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>DALWHINNIE 15</b></H5>
+                                <p>A subtle bouquet of cranberry and strawberry balanced by flavours of honeycomb and sweet tobacco along with a nice weighty finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENFIDDICH 12</b></H5>
+                                <p>Aromas of golden apples and pears with flavours of toasted walnut accompanied by a subtle smoky finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENFIDDICH OLD SOLERA RESERVE 15</b></H5>
+                                <p>Aromas of sweet heather honey and vanilla fudge combined with rich dark fruits with flavours of raisins, honey, and warm spices. Matured in American Bourbon, Portuguese sherry, and new oak.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENFIDDICH 18</b></H5>
+                                <p>Matured in the finest Oloroso sherry and bourbon casks. Remarkably rich aroma with ripe orchard fruit, spiced apple and a robust oakiness with flavours of dried fruit, and candy peel.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENLIVET 12</b></H5>
+                                <p>Intense aromas of vanilla with fruit flavours of peach and nectarine balanced with a light lavender and smoke finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENLIVET 15</b></H5>
+                                <p>Hints of herbs and red seaweed with a lingering smoked tobacco flavor and citric fruit flavor developing into a warm, creamy, light, & earthy finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENLIVET NADURRA 16</b></H5>
+                                <p>Fresh & clean with resolute fruitiness, lemon pulp, and green apple aromas followed by poached peaches in a vanilla syrup, white chocolate, & candied ginger.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENLIVET 18</b></H5>
+                                <p>Rich fruit aromas and toffee notes wonderfully balanced with bursts of sweet oranges complete with a long finish of spice and moist raisin notes.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENMOREANGIE THE ORIGINAL 10</b></H5>
+                                <p>Light floral aromas of lily and heather with concentrated fruit flavours of apple and pear with an elegant butterscotch finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENMORANGIE LASANTA 12</b></H5>
+                                <p>Aged in Sherry Wood</p>
+                                <p>A subtle bouquet of apricot and tangerine followed by toasted walnut and honey flavours finished with a light smoky overtone.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENMORANGIE QUINTA RUBAN 12</b></H5>
+                                <p>Aged in Port Wood</p>
+                                <p>Pleasant aromas of dried rose petals and light smoke with a flavourful palate of figs and blackberries followed by a spicy cedar finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>GLENMORANGIE 18</b></H5>
+                                <p>Deep aromas of vanilla bean and peat with concentrated flavours of caramel and sweet tobacco, balanced by a velvety oak finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>MACALLAN 12</b></H5>
+                                <p>A subtle essence of peat and honey on the nose with rich flavours of sweet maple and coconut and a robust tannin finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>BALVENIE DOUBLEWOOD 12</b></H5>
+                                <p>A graceful bouquet of cedar and clove, with delicious hints of cocoa and black walnut ending with a slightly smoky finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>MACALLAN 15</b></H5>
+                                <p>Matured in Spanish sherry and American bourbon oak casks for hints of rich chocolate, floral, vanilla, raisin, and sweet citrus flavours with a lingering finish of dried fruits.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>MACALLAN FINE OAK 17</b></H5>
+                                <p>Heady, exotic, and floral with a hint of jasmine, tropical fruit, and peat. Soft and rich with a hint of citrus and wood smoke. Lingering with a hint of orange zest.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>MACALLAN 18</b></H5>
+                                <p>Concentrated aromas of smoked peat and spice followed by an array of flavours ranging from citrus and melon to caramelized sugar and oak, all balanced by a pronounced full-bodied flavourful finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>OBAN 14</b></H5>
+                                <p>Hints of herbs and red seaweed with a lingering smoked tobacco flavor and citric fruit flavor developing into a warm, creamy, light, & earthy finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>SPEYBURN 10</b></H5>
+                                <p>A nose that is fresh, clean aromatic with a rich lemony fruitiness, medium-bodied taste with a delicate, fruity character with hints of toffee and butterscotch. A sweet long lasting finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>YAMAZAKI 12</b></H5>
+                                <p>The first seriously marketed Japanese single malt whisky with a nose with plenty of nut oils, zest, pleasant floral character and tropical fruit. The palate is smooth and soft with good sweetness and winter spice. A lovely citrus note develops with more tropical fruit notes and a little rum.</p>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div><!--//modal-body-->
@@ -1173,77 +1321,205 @@
     
     
     
-<!-- Food Modal -->
-    <div id="food-modal" class="modal modal-reserve fade" tabindex="-1" role="dialog" aria-labelledby="foodModalLabel" aria-hidden="true">
+    <!-- Bourbon Modal -->
+    <div id="bourbon-modal" class="modal modal-reserve fade" tabindex="-1" role="dialog" aria-labelledby="bourbonModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h2 id="foodModalLabel" class="modal-title text-center">
+                    <h2 id="bourbonModalLabel" class="modal-title text-center">
                         <span class="script">Park Lane Tavern</span>
-                        <span class="title-text">Whiskey List</span>
+                        <span class="title-text">Bourbon List</span>
                         <span class="title-border"></span>
                     </h2>
                 </div><!--//modal-header-->
                 
                 <div class="modal-body" align="center">
                     <table class="table">
-                        <thead>
-                            <tr>
-                                <th style="text-align:center" class="script">Single Malt Scotch</th>
-                            </tr>
-                        </thead>
-                    
                         <tbody>
-                        <!--ISLAY MALTS-->
+
+                        <!--Bourbon-->
                         <tr>
                             <td>
-                                <H4><b>ISLAY MALTS</b></H4>
+                                <SPAN style="text-align:center" class="script">Small Batch &amp; Single Barrel Bourbons</SPAN>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>BODDINGTON'S PUB ALE</b></H5>
-                                <p>From Manchester, England, this golden coloured ale is smooth and creamy with aromas of sweet malts and vanilla with flavours of toffee and brown sugar.</p>
-                                <p><i>Boddingtons Brewery / Pale Ale / 4.7% ABV / 16oz</i></p>
+                                <H5><b>Angels Envy</b></H5>
+                                <p>The port influence is most evident here, providing solid flavors of walnut and aks, orange marmalade, fresh mint and Seville orange. Long, lingering, and an utterly delicious finish.</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>FULLER'S LONDON PRIDE ALE</b></H5>
-                                <p>From London’s only brewery, this amber coloured ale has aromas of bread and citrus with flavours of caramel and butterscotch.</p>
-                                <p><i>Griffin Brewery / Pale Ale / 4.7% ABV / 20oz</i></p>
+                                <H5><b>Baker’s Small Batch</b></H5>
+                                <p>A delicate presence of lily and black pepper on the nose mellowed out by a hint of butterscotch with a round, creamy finish.</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>FULLER'S LONDON PORTER</b></H5>
-                                <p>Voted the “Best Tasting Porter in the World”, this dark brown coloured beer has aromas of coffee and chocolate with flavours of coffee and roasted chestnuts.</p>
-                                <p><i>Griffin Brewery / Porter / 5.4% ABV / 20oz</i></p>
+                                <H5><b>Basil Hayden’s Small Batch</b></H5>
+                                <p>Subtle aromas of lavender and dill with flavours of sweet vanilla and caramel balanced by a light lingering finish.</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>OLD SPECKLED HEN</b></H5>
-                                <p>Old Speckled Hen has a full, smooth flavour and is very easy to drink. Its rich amber colour and superb fruity aromas are complemented by a delicious blend of malty tastes. Toffee and malt combine with bitterness on the back of the tongue to give a balanced sweetness. This, all followed by a refreshingly dry finish.</p>
-                                <p><i>Morland Brewery / English Ale / 4.5% ABV / 20oz</i></p>
+                                <H5><b>Blanton’s Single Barrel</b></H5>
+                                <p>An interesting bouquet of salt and pepper with a spicy rye and brown sugar flavour followed by a charming fruit and floral finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Booker’s Small Batch</b></H5>
+                                <p>Mild aromas of charcoal and smoke followed by a robust flavour of toffee with a spicy fruity finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>E.H. Taylor Single Barrel</b></H5>
+                                <p>Tastes of caramel corn sweetness, mingled with butterscotch and licorice. The aftertaste is a soft mouth-feel that turns into subtle spices of pepper and tobacco.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>John J. Bowman</b></H5>
+                                <p>A fragrant nose with hints of toffee and leather. The taste is smooth and well rounded, with a touch of figs, almonds and a long dry finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Buffalo Trace</b></H5>
+                                <p>A complex aroma of vanilla, mint and molasses. Pleasantly sweet to the taste with notes of brown sugar and spice that give way to oak, toffee, dark fruit, and anise.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Bulleit’s Small Batch</b></H5>
+                                <p>A concentrated herbal and grassy bouquet married with flavours of dates and figs followed by a dry, crisp finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Catoctin Creek Round Stone Rye</b></H5>
+                                <p>An aroma of sweetness, vanilla, spice and leather. Spicy up front in the taste followed by round sweetness in the middle and a spicy finish. Nice warmth in the taste and finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Copper Fox Rye</b></H5>
+                                <p>A lovely complex rye bouquet. Smoked barley malt along with the apple and cherry wood adds some flavor layers that nuance the rye spice. A mélange of citrus, whispers of apple, dried fruit and leather, dried orange peel, nutmeg, dried cherries with a lot of rye backing it all up.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Eagle Rare Single Barrel</b></H5>
+                                <p>Early aromas of gentle grain, toasted honey-wheat bread transforming into a bourbon bouquet of rich banana and charcoal then the taste explodes into sweet and oily flavours of black raisins, grapefruit, charred oak, and candied almonds.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Elijah Craig 12 yr Small Batch</b></H5>
+                                <p>Light touches of honey, caramel, and cocoa in a straightforward, confident balance which follows with a full, spicy finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>John B. Stetson</b></H5>
+                                <p>Sweet oaky aroma layered with woody flavors, and finishes with hints of vanilla and caramel.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Maker’s Mark 46</b></H5>
+                                <p>Aged a bit longer inside barrels containing seared French oak staves. The staves create bolder, more complex flavors – while eliminating the bitterness that usually comes with whiskies that are aged longer.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Four Roses Small Batch</b></H5>
+                                <p>A spicy, rich, mellow, fruity, hints of sweet oak & caramel nose. Flavours of creamy, mellow, ripened red berries, rich, spicy, well-balanced and moderately sweet with a finish that is soft, smooth & pleasantly long.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>High West Campfire</b></H5>
+                                <p>Rich, inviting, complex smoky aromas of malted chocolate, roasted nuts, and delicate smoky earth. A silky, vibrant, fruity medium-to-full body and a peppery, distinctive, very long mango chutney, vanilla cream, rich baking spices, and peat and tea finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Jefferson’s Ocean Aged at Sea III</b></H5>
+                                <p>The nose has an intense dose of raisins and citrus, while the palate tastes the sweet of the raisins and spice. The finish leaves the spice to a sweet, fruit aftertaste that continues to linger for a while.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Knob Creek 9 yr Small Batch</b></H5>
+                                <p>Hints of dandelion and clover on the nose balanced by flavours of maple and toasted almond sending with a spicy, warm finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Knob Creek Smoked Maple</b></H5>
+                                <p>Full-bodied, inviting maple notes that lift to smoke and are complemented with rich vanilla and caramel, finishing with a smoky, smooth, and slightly sweet taste.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Michter’s Small Batch</b></H5>
+                                <p>Deep notes of vanilla and toffee, toasted almonds and cinnamon with an ample dose of crushed pepper and a hint of orange citrus.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Whistle Pig Straight Rye</b></H5>
+                                <p>The perfect combination of proof, purity, and age — hitting “the sweet spot” in all three categories. In short: more rye, all the proof, and the perfect age. All in. Full stop.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Yellowstone</b></H5>
+                                <p>A marriage of some of the finest hand-selected bourbon available, celebrates the return of Yellowstone to the family of Limestone Branch founders Steve and Paul Beam.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Old Forester 1870 Craft</b></H5>
+                                <p>Clove, cinnamon, and nutmeg flow into a citrus-fruit mix and shortbread sweetness.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Larceny Small Batch</b></H5>
+                                <p>Aromas of fresh bread and toffee, with a note of butterscotch. Flavours of buttery caramel for arich mouthfeel with a long, gentle finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Russell’s Reserve Single Barrel</b></H5>
+                                <p>Wood, toffee, caramel, rye, dark fruit, vanilla, and mint slowly fade to a warm, sweet wood on a pleasantly long finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Russell’s Reserve Small Batch</b></H5>
+                                <p>Reminiscent components of cinnamon and clove with abundant flavours of black walnuts and cedar with a touch of hazelnut sweetness on the finish.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Russell’s Reserve Rye Whiskey</b></H5>
+                                <p>A 6yr small batch rye whiskey with rich, tawny color, and aromas of vanilla and allspice blended to give structure with a powerful mouth feel which is curiously smooth for a rye.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Woodford Reserve Small Batch</b></H5>
+                                <p>Mild aromas of cedar and tobacco with an essence of citrus and spice on the palate followed by a lingering caramel finish.</p>
                             </td>
                         </tr>
                         
-                        <!--SCOTLAND-->
-                        <tr>
-                            <th style="text-align:center" class="script">SCOTLAND</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <H5><b>BELHAVEN SCOTTISH ALE</b></H5>
-                                <p>This classic ale of Scotland is the perfect session beer. With caramel and oak aromas, a smooth mixture of ruby malts and bitter hops, and a nutty flavor that leaves a long creamy finish.</p>
-                                <p><i>Belhaven Brewery / Scottish Ale / 5.0% ABV / 20oz</i></p>
-                            </td>
-                        </tr>
-
-
                         </tbody>
                     </table>
                 </div><!--//modal-body-->
@@ -1254,13 +1530,15 @@
                 
             </div><!--//modal-content-->
         </div><!--//modal-dialog-->
-    </div><!--//food modal-->
+    </div><!--//bourbon modal-->
     
     
     
     
     
-<!-- Cocktail Modal -->
+    
+    
+        <!-- Cocktail Modal -->
     <div id="cocktail-modal" class="modal modal-reserve fade" tabindex="-1" role="dialog" aria-labelledby="cocktailModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -1269,67 +1547,129 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h2 id="cocktailModalLabel" class="modal-title text-center">
                         <span class="script">Park Lane Tavern</span>
-                        <span class="title-text">Whiskey List</span>
+                        <span class="title-text">Cocktail &amp; Martini Menu</span>
                         <span class="title-border"></span>
                     </h2>
                 </div><!--//modal-header-->
                 
                 <div class="modal-body" align="center">
                     <table class="table">
-                        <thead>
-                            <tr>
-                                <th style="text-align:center" class="script">Single Malt Scotch</th>
-                            </tr>
-                        </thead>
-                    
                         <tbody>
-                        <!--ISLAY MALTS-->
-                        <tr>
-                            <td>
-                                <H4><b>ISLAY MALTS</b></H4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <H5><b>BODDINGTON'S PUB ALE</b></H5>
-                                <p>From Manchester, England, this golden coloured ale is smooth and creamy with aromas of sweet malts and vanilla with flavours of toffee and brown sugar.</p>
-                                <p><i>Boddingtons Brewery / Pale Ale / 4.7% ABV / 16oz</i></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <H5><b>FULLER'S LONDON PRIDE ALE</b></H5>
-                                <p>From London’s only brewery, this amber coloured ale has aromas of bread and citrus with flavours of caramel and butterscotch.</p>
-                                <p><i>Griffin Brewery / Pale Ale / 4.7% ABV / 20oz</i></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <H5><b>FULLER'S LONDON PORTER</b></H5>
-                                <p>Voted the “Best Tasting Porter in the World”, this dark brown coloured beer has aromas of coffee and chocolate with flavours of coffee and roasted chestnuts.</p>
-                                <p><i>Griffin Brewery / Porter / 5.4% ABV / 20oz</i></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <H5><b>OLD SPECKLED HEN</b></H5>
-                                <p>Old Speckled Hen has a full, smooth flavour and is very easy to drink. Its rich amber colour and superb fruity aromas are complemented by a delicious blend of malty tastes. Toffee and malt combine with bitterness on the back of the tongue to give a balanced sweetness. This, all followed by a refreshingly dry finish.</p>
-                                <p><i>Morland Brewery / English Ale / 4.5% ABV / 20oz</i></p>
-                            </td>
-                        </tr>
-                        
-                        <!--SCOTLAND-->
-                        <tr>
-                            <th style="text-align:center" class="script">SCOTLAND</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <H5><b>BELHAVEN SCOTTISH ALE</b></H5>
-                                <p>This classic ale of Scotland is the perfect session beer. With caramel and oak aromas, a smooth mixture of ruby malts and bitter hops, and a nutty flavor that leaves a long creamy finish.</p>
-                                <p><i>Belhaven Brewery / Scottish Ale / 5.0% ABV / 20oz</i></p>
-                            </td>
-                        </tr>
 
+                        <!--Cocktails-->
+                        <tr>
+                            <td>
+                                <SPAN style="text-align:center" class="script">Cocktails</SPAN>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Cabo Agave Rita</b></H5>
+                                <p>Blue Agave takes ten years to harvest… no patience necessary while drinking this margarita made with Cabo Wabo Blanco Tequila, Cointreau, Agave Nectar & Sour.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Lucy In The Sky</b></H5>
+                                <p>Smirnoff Vanilla Vodka, Malibu Rum, Blue Curacao, and refreshing Pineapple juice come together to create a sweet and alluring drink.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Mojito Parisian</b></H5>
+                                <p>A Cuban classic with a Parisian twist! Rum & St. Germain Liqueur, muddled mint and lime, topped with club soda. (Try one with a fruity twist: Mango, Strawberry, Peach, Blackberry, or Pomegranate).</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Orange Crush</b></H5>
+                                <p>A burst of orange flavor to entice any taste buds!  Smirnoff Orange Vodka, Triple Sec, orange juice, and topped off with a splash of soda for a refreshing orange blast.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Penny Lane Hurricane</b></H5>
+                                <p>A classic drink with a Park Lane twist!  Smirnoff Vodka, Malibu Rum, Banana Liqueur, pineapple and orange juice combine for that perfect Bahama’s feel.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Pomegranate Fizz</b></H5>
+                                <p>Fresh, crisp, & refreshing!  Pama Pomegranate Liqueur, Vodka & cranberry juice, topped with Sparkling Champagne.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Pimm’s Cup</b></H5>
+                                <p>A British classic! Pimm’s No. 1 & Sierra Mist refresh with a smooth minty finish. Garnished with a cucumber slice.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>The Ticket</b></H5>
+                                <p>Join us in the Captain's chair for this voyage!  Captain Morgan’s Spiced Rum, Malibu Coconut Rum, passion fruit puree, orange & pineapple juice with a Myers Dark Rum float.</p>
+                            </td>
+                        </tr>
+                        <!--Martinis-->
+                        <tr>
+                            <td>
+                                <SPAN style="text-align:center" class="script">Martinis</SPAN>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Classic Martini</b></H5>
+                                <p>A traditional Martini made with your choice of Gin or Vodka. Made to your liking: Dry, Extra Dry, or Dirty!</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Bellini-Tini</b></H5>
+                                <p>One we all know and love! Made with Vodka, Peach Schnapps, peach puree, and topped off with Champagne!</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Mango Cosmo</b></H5>
+                                <p>A mango twist on an old favorite. The ladies love this concoction of Smirnoff Vodka, Triple Sec, Cranberry, mango puree, and splash of lime.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Raspberry Peach Martini</b></H5>
+                                <p>Smirnoff Raspberry Vodka Peach Schnapps and a splash of Sour will have you asking for a second.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Dragon Breath</b></H5>
+                                <p>The name tells you all you need to know… Bacardi Dragonberry Rum, Cranberry Juice, with a splash of Sour.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Punch-Tini</b></H5>
+                                <p>Vodka, Pomegranate Schnapps, Mango Monin and lemonade. This is our adult version of your childhood favorite!</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>The Carribean</b></H5>
+                                <p>This one will take you straight to the tropics! Combination of Malibu Rum, Hypnotic Liquor,and Pineapple Juice.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Sparkling Passion-Tini</b></H5>
+                                <p>A sparkling favorite for the Champagne lover! Made with Vodka, passion fruit puree, and Champagne.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <H5><b>Captains Booty</b></H5>
+                                <p>Captain Morgan Spiced Rum and Grapefruit Rum combined with a splash of passion fruit puree and Tropical Red Bull. A perfect kick in the glass!</p>
+                            </td>
+                        </tr>
 
                         </tbody>
                     </table>
@@ -1343,6 +1683,457 @@
         </div><!--//modal-dialog-->
     </div><!--//cocktail modal-->
     
+    
+    
+    
+           <!-- Food Modal -->
+    <div id="food-modal" class="modal modal-reserve fade" tabindex="-1" role="dialog" aria-labelledby="foodModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 id="foodModalLabel" class="modal-title text-center">
+                        <span class="script">Park Lane Tavern</span>
+                        <span class="title-text">Food Menu</span>
+                        <span class="title-border"></span>
+                    </h2>
+                </div><!--//modal-header-->
+                
+                <div class="modal-body" align="center">
+
+                    <ul class="nav nav-tabs" id="tabContent">
+                        <li class="active"><a href="#smallplates" data-toggle="tab" STYLE="color:#000;"><b>Small Plates</b></a></li>
+                        <li><a href="#largeplates" data-toggle="tab" STYLE="color:#000;"><b>Large Plates</b></a></li>
+                        <li><a href="#sandwiches" data-toggle="tab" STYLE="color:#000;"><b>Sandwiches</b></a></li>
+                        <li><a href="#soupsalad" data-toggle="tab" STYLE="color:#000;"><b>Soups / Salads</b></a></li>
+                        <li><a href="#kids" data-toggle="tab" STYLE="color:#000;"><b>Lads &amp; Lassies</b></a></li>
+                        <li><a href="#sweets" data-toggle="tab" STYLE="color:#000;"><b>Sweets</b></a></li>
+                    </ul>
+                      
+                    <div class="tab-content">
+                        
+                        <div class="tab-pane active fade in" id="smallplates">
+
+                    <!--<a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#food-modal">Food Menu</a>-->
+
+                            <table class="table">
+                                <tbody>
+                                        
+                                    <tr>
+                                        <td>
+                                            <SPAN style="text-align:center" class="script">Small Plates</SPAN>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Tavern Wings</b></H5>
+                                            <p>Fresh jumbo chicken wings, fried crispy and tossed in one of our signature sauces.</p>
+                                            <p><i>Signature Sauces: Buffalo, Makers Mark® BBQ, Malibu Coconut Sweet Red Chili, Guinness® Glaze, and Traditional Teriyaki.</i></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Spinach &amp; Artichoke Dip</b></H5>
+                                            <p>Warm spinach &amp; artichoke blended with Guinness, mozzarella and parmesan cheeses. Served with toasted pita wedges.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Goat Cheese Dip</b></H5>
+                                            <p>Made fresh daily from Glenview Farms* goat cheese, combined with cream cheese and topped with marinara sauce and toasted almonds. Served with toasted pita wedges.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Fried Calamari</b></H5>
+                                            <p>Hand cut breaded slices of calamari steak, flash fried crispy on the outside, tender on the inside. Served with marinara and sweet chili sauces.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Firecracker Shrimp</b></H5>
+                                            <p>Crispy fried shrimp and jalapenos drizzled with a creamy, spicy sauce.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Seared Ahi *</b></H5>
+                                            <p>Chilled strips of seared Ahi tuna. Served with traditional ponzu sauce and wasabi.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Fried Pickles</b></H5>
+                                            <p>Lightly breaded pickle spears, deep fried golden brown and delicious. Served with our homemade creamy dill dressing.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Bavarian Pretzels</b></H5>
+                                            <p>Fresh baked soft pretzels topped with sea salt. Served with our homemade dipping sauces: Guinness Mustard &amp; warm cheese dip.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Tavern Combo*</b></H5>
+                                            <p>A select combination of our signature fried calamari steak, seared Ahi tuna, spinach & artichoke dip, and goat cheese dip.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Beer Battered Mushrooms & Onions</b></H5>
+                                            <p>A crispy tower of English Ale battered silver dollar mushrooms and thick cut onion rings. Served with two tasty dipping sauces.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Tavern Chips</b></H5>
+                                            <p>English style ‘proper’ potato chips, piled high and topped with cheddar cheese, bacon, scallions and BBQ sauce.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Florentine Stuffed Mushrooms</b></H5>
+                                            <p>Mushroom caps stuffed with spinach and Spanish artichokes. Finished with mozzarella and bread crumbs. Served with toasted baguettes.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Guinness Chili Cheese Fries</b></H5>
+                                            <p>Crispy tavern fries smothered in cheese sauce, chef inspired Guinness chili, and scallions.</p>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                                    
+                        <div class="tab-pane fade" id="largeplates">
+                            
+                            <table class="table">
+                                <tbody>
+                                     <tr>
+                                        <td>
+                                            <SPAN style="text-align:center" class="script">Large Plates</SPAN>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Boddingtons Fish &amp; Chips</b></H5>
+                                            <p>English ale battered and fried to order whole Atlantic Haddock filet on a bed of fresh tavern fries. Served with house-made tartar sauce.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Crab &amp; Balsamic Portabellas</b></H5>
+                                            <p>Marinated portabella mushrooms with fresh crabmeat, mozzarella and balsamic reduction. Served with char grilled asparagus and field greens.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Magners Corned Beef &amp; Beer Braised Cabbage</b></H5>
+                                            <p>Magners Cider marinated USDA corned beef brisket that is slow cooked and thinly sliced in house. Paired with Harp Lager braised cabbage and bacon, chive whipped potatoes and whole carrots.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Jagerschnitzel</b></H5>
+                                            <p>Hand flattened pork loin fried and topped with traditional onion and mushroom gravy. Served with kraut, warm potato salad & green beans.</p>
+                                            <p>A German classic!</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>London Broil*</b></H5>
+                                            <p>Tender char-grilled sirloin steak thinly sliced, topped with sautéed mushrooms and a rich bordelaise. Served with fresh sautéed green beans and chive whipped potatoes.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Bangers &amp; Mash</b></H5>
+                                            <p>Fennel infused pork sausages, char-grilled, over chive whipped potatoes and covered in our house-made Old Speckeled Hen Ale-onion gravy, fresh snap peas and whole carrots. Served with field greens.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Crab & Balsamic Portabellas</b></H5>
+                                            <p>Marinated portabella mushrooms with fresh crabmeat, mozzarella and balsamic reduction. Served with char grilled asparagus and field greens.</p>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div> 
+                        
+                        
+                        <div class="tab-pane fade" id="sandwiches">
+                            
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <SPAN style="text-align:center" class="script">Sandwiches</SPAN>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Alpine Chicken Sandwich</b></H5>
+                                            <p>Marinated grilled chicken breast, Applewood bacon, Swiss & cheddar cheese, topped with a thick-cut beer battered onion ring & our signature bourbon BBQ aioli.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Magners Corned Beef Sandwich</b></H5>
+                                            <p>USDA corned beef brisket slow roasted daily. Steeped in Magners® Cider and brown sugar. Topped with sauerkraut, Russian dressing, Swiss cheese, and served on rye bread.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Tavern Club</b></H5>
+                                            <p>Fresh turkey breast, roasted in house and sliced to order. Applewood bacon, lettuce, avocado, tomato, Swiss cheese and house-made cider aioli. Served with tavern chips.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Chicken &amp; Apple Brie</b></H5>
+                                            <p>Char-grilled chicken, sliced Granny Smith Apples, soft brie cheese, our house-made sweet cranberry coulis and cider aioli. Served on an artisan French baguette. Served with field greens.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Tavern Monte Cristo</b></H5>
+                                            <p>Triple decker with shaved black forest ham, slices of fresh char-grilled chicken, house-made sweet cranberry coulis, cider aioli, topped with Gouda cheese, and tempura fried.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Capra Portabella</b></H5>
+                                            <p>Grilled marinated portabellas with lettuce, tomato, onion, roasted red peppers and goat cheese spread. Served on ciabatta.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>French Dip</b></H5>
+                                            <p>Thinly sliced seasoned beef, roasted in house and piled high with provolone cheese, caramelized onions and house-made bordelaise for dipping.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Atlantic Haddock Sandwich</b></H5>
+                                            <p>Broiled or Fried English ale battered fish, topped with lettuce, tomato and onion. Served on a soft Brioche roll.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Panini of the Day</b></H5>
+                                            <p>Served with Tavern Chips. Ask Your Server for Details.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                        
+                        
+                        <div class="tab-pane fade" id="soupsalad">
+                            
+                            <table class="table">
+                                <tbody>
+                                     <tr>
+                                        <td>
+                                            <SPAN style="text-align:center" class="script">Salads</SPAN>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Park Lane Salad</b></H5>
+                                            <p>Hand tossed fresh field greens, Granny Smith apples, bleu cheese crumbles, bacon, onions, cucumbers, red and green peppers, mushrooms, Roma tomatoes, toasted almonds & craisins.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Caesar Salad</b></H5>
+                                            <p>Torn hearts of romaine, tossed in Caesar dressing topped with Asiago cheese and house-made croutons.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Steak House Salad</b></H5>
+                                            <p>Field greens tossed with bleu cheese crumbles, onions, Roma tomatoes, and Applewood bacon topped with thinly sliced, cooked to order sirloin steak.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Cobb Salad</b></H5>
+                                            <p>Field greens, hard-boiled egg, Applewood bacon, cheddar cheese and mozzarella, onions, and Roma tomatoes, topped with crispy fried or grilled chicken.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Grilled Chicken & Cranberry Salad</b></H5>
+                                            <p>Chopped romaine topped with dried cranberries, bleu cheese crumbles, red onions, sweet pecans, mandarin oranges, and a grilled chicken breast with orange cranberry vinaigrette.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Ahi Tuna Salad*</b></H5>
+                                            <p>Chilled strips of seared, Ahi tuna served over field greens with red and yellow peppers, onions, and fried wonton strips with sesame dressing.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Caprese Salad</b></H5>
+                                            <p>Fresh mozzarella, basil, and sliced garden tomatoes on mixed greens with a balsamic and extra virgin olive oil drizzle and fresh cracked black pepper.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Side Salad</b></H5>
+                                            <p>Choice of a classic house salad of field greens topped with a blend of vegetables or a petite Caesar salad.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Add a Protein to any of the above salads:</b></H5>
+                                            <p>
+                                                Steak<br>
+                                                Grilled Chicken<br>
+                                                Ahi Tuna<br>
+                                                Shrimp<br>
+                                                Fried Calamari<br>
+                                                Salmon
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <SPAN style="text-align:center" class="script">Soups</SPAN>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Soup De Jour</b></H5>
+                                            <p>Soup of the day varies every day. Ask your local server for more details.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Guinness Chili</b></H5>
+                                            <p>Spicy chili made with Guinness and served with sour cream and shredded cheddar cheese.</p>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        
+                        <div class="tab-pane fade" id="kids">
+                            
+                            <table class="table">
+                                <tbody>
+                                     <tr>
+                                        <td>
+                                            <SPAN style="text-align:center" class="script">Lads &amp; Lassies</SPAN>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Fish-n-Chips</b></H5>
+                                            <p>Battered Atlantic haddock with bottomless tavern fries. Served with house made tartar sauce.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Banger-n-Mash</b></H5>
+                                            <p>Fennel sausage char-grilled, over redskin mashed potatoes, with ale-onion gravy, peas and carrots.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Burger Sliders</b></H5>
+                                            <p>Three beef sliders on silver dollar rolls with cheese and bottomless tavern fries.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Grilled Chicken</b></H5>
+                                            <p>Grilled chicken breast served with redskin mashed potatoes and green beans.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Cranberry Chicken Salad</b></H5>
+                                            <p>Chopped romaine topped with dried cranberries, sweet pecans, mandarin oranges, and a grilled chicken breast with orange cranberry vinaigrette.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Salisbury Steak</b></H5>
+                                            <p>Chopped steak patty served with green beans, redskin mashed potatoes and bordelaise</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                        
+                        
+                        <div class="tab-pane fade" id="sweets">
+                            
+                            <table class="table">
+                                <tbody>
+                                     <tr>
+                                        <td>
+                                            <SPAN style="text-align:center" class="script">Sweets</SPAN>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Berries and Custard</b></H5>
+                                            <p>Tipsy berries and sautéed with brandy atop fried pound cake and authentic English custard.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Guinness Brownie Sunday</b></H5>
+                                            <p>Guinness stout brownie topped with vanilla bean ice cream, chocolate sauce, whipped cream and toasted almonds.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Cheesecake</b></H5>
+                                            <p>New York style cheesecake, served with fresh bananas, banana liqueur, caramel sauce and whipped cream.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <H5><b>Jameson Irish Whiskey Bread Pudding</b></H5>
+                                            <p>Our own house made recipe topped with Irish whiskey sauce and paired with vanilla bean ice cream.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                        
+
+                    </div>
+                </div><!--//modal-body-->
+                
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary center-block" data-dismiss="modal">Close</button>
+                </div><!--//modal-footer-->
+                
+            </div><!--//modal-content-->
+        </div><!--//modal-dialog-->
+    </div><!--//cocktail modal-->
+    
+    
+
+    
+    
+    
+    
+
  
     <!-- Main Javascript -->          
     <script type="text/javascript" src="static/plugins/jquery-1.11.3.min.js"></script>

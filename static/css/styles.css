@@ -989,8 +989,8 @@ select {
 .modal .modal-menu {
   width: 80%;
 }
-.modal .modal-dialog {
-  width: 760px;
+.modal .modal-dialog {  /* This width adjusts how wide the modal is */
+  width: 800px;
 }
 .modal .modal-title {
   font-weight: bold;

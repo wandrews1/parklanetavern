@@ -26,7 +26,8 @@
 
         // Set the recipient email address.
         //IMPORTANT TODO: CHANGE THIS TO YOUR EMAIL ADDRESS!!
-        $recipient = "promotions@parklanetavern.com";
+        $recipient = "scripture187@gmail.com";
+        // $recipient = "promotions@parklanetavern.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
