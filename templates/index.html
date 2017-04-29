@@ -437,8 +437,7 @@
             </h2>
             <div class="intro center-block">
                 <!--<h2>Our Story</h2>-->
-                <p>Inspired by the culture of European pubs and taverns, we embarked in the fall of 2005 to create a place of hospitable surroundings, wonderful food and unique drinks.</p>
-                <p>Park Lane Tavern strives to offer a unique dining experience set in a vibrant European tavern atmosphere. We have given attention to detail in the architecture incorporating numerous elements of taverns originating from some of Europe’s finest cities.</p>
+                <p>Inspired by the culture of European pubs and taverns, we embarked in the fall of 2005 to create a place of hospitable surroundings, wonderful food and unique drinks. Park Lane Tavern strives to offer a unique dining experience set in a vibrant European tavern atmosphere. We have given attention to detail in the architecture incorporating numerous elements of taverns originating from some of Europe’s finest cities.</p>
                 <p>The culinary team at Park Lane Tavern is committed to providing you with food of the highest freshness and quality. The fare can be described as chef driven Classic American comfort cuisine as well as traditional European dishes. We strive to consistently provide our guests with impeccable service by demonstrating graciousness, efficiency, and knowledge in our work.</p>
                 <p>To properly experience Park Lane Tavern you need to partake in our unique beverage offerings. We have an extensive selection of draughts from around the world on a state of the art dispensing system and served in unique brew master glasses. A comprehensive list of single malt scotches, small batch and single barrel bourbons, and notable wines round out our list.</p>
                 <p>So, whether it’s our design and décor, atmosphere, beverage or cuisine, we invite you to experience a taste of comfort, both American and European.</p>
@@ -653,6 +652,7 @@
                         <p class="booking-intro">Or book online</p>
                     </div>
                 </div><!--//modal-header-->
+                
                 <div class="modal-body">
                     <form id="reserve-form" class="reserve-form form" method="post" action="mailer.php">
                         <div id="form-messages"></div>              
@@ -729,7 +729,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title text-center" id="mondayModalLabel">Half Price Fish &amp; Chips</h4>
+                    <h4 class="modal-title text-center script" id="mondayModalLabel">Half Price Fish &amp; Chips</h4>
                     <div class="meta text-center">Every Monday</div>
                 </div><!--//modal-header-->
                 <div class="modal-body">
@@ -753,7 +753,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title text-center" id="wednesdayModalLabel">Steal the Pint Night</h4>
+                    <h4 class="modal-title text-center script" id="wednesdayModalLabel">Steal the Pint</h4>
                     <div class="meta text-center">Every Wednesday</div>
                 </div><!--//modal-header-->
                 <div class="modal-body">
@@ -777,7 +777,7 @@
                 
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title text-center" id="thursdayModalLabel">DRAFT NIGHT</h4>
+                    <h4 class="modal-title text-center script" id="thursdayModalLabel">Draft Night</h4>
                     <div class="meta text-center">Every Thursday</div>
                 </div><!--//modal-header-->
                 
@@ -806,7 +806,7 @@
                 
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title text-center" id="fridayModalLabel">MARTINI MADNESS</h4>
+                    <h4 class="modal-title text-center script" id="fridayModalLabel">Martini Madness</h4>
                     <div class="meta text-center">Every Friday</div>
                 </div><!--//modal-header-->
                 
@@ -835,7 +835,7 @@
                 
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title text-center" id="sundayModalLabel">SUNDAY BLOODY SUNDAY</h4>
+                    <h4 class="modal-title text-center script" id="sundayModalLabel">Sunday, Bloody Sunday</h4>
                     <div class="meta text-center">Every Sunday</div>
                 </div><!--//modal-header-->
                 
@@ -1348,22 +1348,47 @@
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>Angels Envy</b></H5>
-                                <p>The port influence is most evident here, providing solid flavors of walnut and aks, orange marmalade, fresh mint and Seville orange. Long, lingering, and an utterly delicious finish.</p>
+                                <a role="button" data-toggle="collapse" href="#angelsenvy" aria-expanded="false" aria-controls="collapseExample" STYLE="text-decoration:none;">
+                                    <div>
+                                        <div class="collapse" id="angelsenvy">
+                                            <center><img class="img-responsive" src="static/images/menu/bevbible/bourbon/angelsenvy.png"/></center>
+                                        </div>
+                                        <H5 STYLE="color:#000;"><b>Angels Envy</b></H5>
+                                        <p STYLE="color:#000;">The port influence is most evident here, providing solid flavors of walnut and aks, orange marmalade, fresh mint and Seville orange. Long, lingering, and an utterly delicious finish.</p>
+                                    </div>
+                                </a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>Baker’s Small Batch</b></H5>
-                                <p>A delicate presence of lily and black pepper on the nose mellowed out by a hint of butterscotch with a round, creamy finish.</p>
+                                <a role="button" data-toggle="collapse" href="#bakers" aria-expanded="false" aria-controls="collapseExample" STYLE="text-decoration:none;">
+                                    <div>
+                                        <div class="collapse" id="bakers">
+                                            <center><img class="img-responsive" src="static/images/menu/bevbible/bourbon/bakers.png"/></center>
+                                        </div>
+                                        <H5 STYLE="color:#000;"><b>Baker’s Small Batch</b></H5>
+                                        <p STYLE="color:#000;">A delicate presence of lily and black pepper on the nose mellowed out by a hint of butterscotch with a round, creamy finish.</p>
+                                    </div>
+                                </a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <H5><b>Basil Hayden’s Small Batch</b></H5>
-                                <p>Subtle aromas of lavender and dill with flavours of sweet vanilla and caramel balanced by a light lingering finish.</p>
+                                <a role="button" data-toggle="collapse" href="#basilhaydens" aria-expanded="false" aria-controls="collapseExample" STYLE="text-decoration:none;">
+                                    <div>
+                                        <div class="collapse" id="basilhaydens">
+                                            <center><img class="img-responsive" src="static/images/menu/bevbible/bourbon/basilhaydens.png"/></center>
+                                        </div>
+                                        <H5 STYLE="color:#000;"><b>Basil Hayden’s Small Batch</b></H5>
+                                        <p STYLE="color:#000;">Subtle aromas of lavender and dill with flavours of sweet vanilla and caramel balanced by a light lingering finish.</p>
+                                    </div>
+                                </a>
                             </td>
                         </tr>
+                        
+                        
+                        
+                        
                         <tr>
                             <td>
                                 <H5><b>Blanton’s Single Barrel</b></H5>
@@ -1686,8 +1711,7 @@
     
     
     
-    
-           <!-- Food Modal -->
+<!-- Food Modal -->
     <div id="food-modal" class="modal modal-reserve fade" tabindex="-1" role="dialog" aria-labelledby="foodModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -1703,21 +1727,18 @@
                 
                 <div class="modal-body" align="center">
 
-                    <ul class="nav nav-tabs" id="tabContent">
-                        <li class="active"><a href="#smallplates" data-toggle="tab" STYLE="color:#000;"><b>Small Plates</b></a></li>
-                        <li><a href="#largeplates" data-toggle="tab" STYLE="color:#000;"><b>Large Plates</b></a></li>
-                        <li><a href="#sandwiches" data-toggle="tab" STYLE="color:#000;"><b>Sandwiches</b></a></li>
-                        <li><a href="#soupsalad" data-toggle="tab" STYLE="color:#000;"><b>Soups / Salads</b></a></li>
-                        <li><a href="#kids" data-toggle="tab" STYLE="color:#000;"><b>Lads &amp; Lassies</b></a></li>
-                        <li><a href="#sweets" data-toggle="tab" STYLE="color:#000;"><b>Sweets</b></a></li>
+                    <ul class="nav nav-tabs nav-justified" id="tabContent">
+                        <li class="active" style="white-space:nowrap"><a href="#smallplates" data-toggle="tab" STYLE="color:#000;"><b>Small Plates</b></a></li>
+                        <li style="white-space:nowrap"><a href="#largeplates" data-toggle="tab" STYLE="color:#000;"><b>Large Plates</b></a></li>
+                        <li style="white-space:nowrap"><a href="#sandwiches" data-toggle="tab" STYLE="color:#000;"><b>Sandwiches</b></a></li>
+                        <li style="white-space:nowrap"><a href="#soupsalad" data-toggle="tab" STYLE="color:#000;"><b>Soups / Salads</b></a></li>
+                        <li style="white-space:nowrap"><a href="#kids" data-toggle="tab" STYLE="color:#000;"><b>Lads &amp; Lassies</b></a></li>
+                        <li style="white-space:nowrap"><a href="#sweets" data-toggle="tab" STYLE="color:#000;"><b>Sweets</b></a></li>
                     </ul>
                       
                     <div class="tab-content">
-                        
+    
                         <div class="tab-pane active fade in" id="smallplates">
-
-                    <!--<a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#food-modal">Food Menu</a>-->
-
                             <table class="table">
                                 <tbody>
                                         
@@ -1726,7 +1747,6 @@
                                             <SPAN style="text-align:center" class="script">Small Plates</SPAN>
                                         </td>
                                     </tr>
-                                    
                                     
                                     <tr>
                                         <td>
@@ -2218,7 +2238,7 @@
                 
             </div><!--//modal-content-->
         </div><!--//modal-dialog-->
-    </div><!--//cocktail modal-->
+    </div><!--//food modal-->
     
     
 
